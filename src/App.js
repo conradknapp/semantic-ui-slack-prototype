@@ -12,14 +12,16 @@ import MetaPanel from "./components/MetaPanel/MetaPanel";
 class App extends Component {
   render() {
     return (
-      <Grid columns={2}>
+      <Grid columns="equal" style={{ padding: "1em" }}>
         <ColorPanel />
         <SidePanel />
+
         <Grid.Column style={{ marginLeft: 320 }}>
           <ChatHeader />
           <Messages />
         </Grid.Column>
-        <Grid.Column width={3}>
+
+        <Grid.Column width={4}>
           <MetaPanel />
         </Grid.Column>
       </Grid>

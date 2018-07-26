@@ -27,7 +27,11 @@ const CurrentUser = () => (
     <Menu.Header as="h2">
       DevChat
       <Dropdown inline header="DevChat" options={options} defaultValue={""} />
-      <Icon name="bell outline" />
+      <Icon.Group>
+        <Icon name="bell outline" />
+        <Icon corner className="top right" name="circle" color="blue" />
+        {/* <i className="top right corner circle blue icon" /> */}
+      </Icon.Group>
     </Menu.Header>
     <div style={{ color: "white", opacity: 0.7 }}>
       <Icon name="circle" color="green" />

@@ -3,7 +3,7 @@ import { Header, Segment, Input, Icon } from "semantic-ui-react";
 
 const ChatHeader = () => (
   <Segment clearing>
-    <Header as="h2" floated="left" style={{ marginBottom: 0 }}>
+    <Header fluid="true" as="h2" floated="left" style={{ marginBottom: 0 }}>
       <span>
         # Inbox <Icon size="small" name="star outline" />
       </span>
